@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "rozpadyuka"
+      "X-Author": "rozpadyuka",
+      "Access-Control-Allow-Origin" : "*"
     }
   }
 }

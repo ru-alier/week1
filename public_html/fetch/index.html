@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head><source>
+<body>
+    <input type="text" name="inp" value="">
+    <button name="bt">Send</button>
+    <script>
+        var input = document.querySelector('button')
+            .addEventListener('click', fetch_req);
+        
+        function fetch_req(){
+            var url=document.querySelector('input').value;
+            console.log('Executed!'); 
+            fetch(url)
+                .then((response) => {
+                    return response;
+                })
+                .then((data) => {
+                    console.log(data);
+                    document.querySelector('input').value = data;
+                })
+                .catch(reject => {
+                    console.log(reject);
+                });
+        }
+    </script>
+</body>
+</html>

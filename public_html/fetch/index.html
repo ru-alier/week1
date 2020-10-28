@@ -6,14 +6,14 @@
     <title>fetch</title>
 </head>
 <body>
-    <input type="text" name="inp" value="">
-    <button name="bt">Send</button>
+    <input type="text" id="inp" value="">
+    <button id="bt">Send</button>
     <script>
-        var input = document.querySelector('button')
+        const input = document.querySelector('button')
             .addEventListener('click', fetch_req);
         
         function fetch_req(){
-            var url=document.querySelector('input').value;
+            const url=document.querySelector('input').value;
             console.log('Executed!'); 
             fetch(url)
                 .then((response) => {

@@ -1,0 +1,15 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "first node",
+  "type": "module",
+  "main": "index.js",
+  "author": "Alexander Roz",
+  "license": "MIT",
+  "dependencies": {
+    "curl": "^0.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

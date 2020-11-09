@@ -1,5 +1,5 @@
 import { Server } from 'http';
-import 'fast-json-stable-stringify';
+// import 'fast-json-stable-stringify';
 const s = Server((req, res) => {
     let data = '';
     res.writeHead(200, {
@@ -20,4 +20,4 @@ const s = Server((req, res) => {
     }))
     );
 });
-s.listen(4321, ()=>console.log(process.pid));
+s.listen(80);

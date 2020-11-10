@@ -6,6 +6,12 @@
   "main": "index.js",
   "author": "Alexander Roz",
   "license": "MIT",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "engines":{
+    "node":"14.5.0"
+  },
   "dependencies": {
     "curl": "^0.1.4"
   },
